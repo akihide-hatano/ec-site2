@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>商品登録</title>
   </head>
   <body>
-    <section>
-    <label for="">商品名</label>
-    <input type="text">
-    <label for="">商品写真</label>
-    <input type="file">
-  </section>
+    <form class="item-register">
+      <label class="item-name-title" for="item-name">商品名</label>
+      <input class="input-item-name" type="text" id="item-name" />
+      <label class="item-photo">商品写真</label>
+      <div id="drop-area">
+        <p>ここに画像をドラッグ＆ドロップしてください</p>
+        <input class="item-photoFile" type="file" id="item-photo" style="display: none;" />
+      </div>
+      <img id="preview" src="" style="max-width: 300px; display: none;" />
+    </form>
+    <button type="button" id="cancel-button">取り消し</button>
+    <script src="./script.js"></script>
   </body>
 </html>
