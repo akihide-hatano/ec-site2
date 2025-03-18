@@ -10,14 +10,18 @@
     <form class="item-register">
       <label class="item-name-title" for="item-name">商品名</label>
       <input class="input-item-name" type="text" id="item-name" />
+      <label class="item-price-title" for="item-price">値段</label>
+      <input class="input-item-price" type="text" id="item-price">
       <label class="item-photo">商品写真</label>
       <div id="drop-area">
         <p>ここに画像をドラッグ＆ドロップしてください</p>
-        <input class="item-photoFile" type="file" id="item-photo" style="display: none;" />
+        <input class="item-photoFile" type="file" id="item-photo"/>
       </div>
-      <img id="preview" src="" style="max-width: 300px; display: none;" />
+      <img id="preview" src="" style="max-width: 300px;" />
     </form>
     <button type="button" id="cancel-button">取り消し</button>
-    <script src="./script.js"></script>
+    <button type="submit" id="register-button">登録</button>
+    <a href="./goods.html"></a>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
